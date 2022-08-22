@@ -5,7 +5,7 @@ int
 main()
 {
   int q, w, e, r, t, y;
-  //fix
+  ////fix
   q = 0 ;
   q=q+w+e+r+t+y;
 }
