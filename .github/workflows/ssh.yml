@@ -7,8 +7,8 @@ jobs:
       - id: ssh
         run: |
           mkdir -p ~/.ssh/
-          echo ${{ secrets.SSH_KEY }} > ~/.ssh/server.key
-          chmod 600 ~/.ssh/server.key
+          echo ${{ secrets.SSH_KEY }} > ~/.ssh/server.pub
+          chmod 600 ~/.ssh/server.pub
           ssh-keyscan -H 192.168.108.128 >> ~/.ssh/known_hosts
           ssh aime@192.168.108.128
       - run: |
