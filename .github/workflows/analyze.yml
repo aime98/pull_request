@@ -1,6 +1,8 @@
 name: "test"
 on:
   pull_request:
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOK }}
 jobs:
   info:
     runs-on: ubuntu-latest
